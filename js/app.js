@@ -143,8 +143,8 @@ var ViewModel = function() {
         var result = [];
         for (var i = 0; i < this.markers.length; i++) {
             var markerLocation = this.markers[i];
-            if (markerLocation.title.toLowerCase().includes(this.searchOption()
-                    .toLowerCase())) {
+            var searchTerms = this.searchOption().toLowerCase();
+            if (markerLocation.title.toLowerCase().includes(searchTerms)) {
                 result.push(markerLocation);
                 this.markers[i].setVisible(true);
             } else {

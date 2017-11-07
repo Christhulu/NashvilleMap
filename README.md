@@ -1,4 +1,3 @@
-Neighborhood Map Project
 (Recording Studios in Nashville)
 ============================
 

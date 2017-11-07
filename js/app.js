@@ -24,7 +24,7 @@ var studios = [
             lat: 36.2050367,
             lng: -86.5170472
         }
-    ]
+    ];
 
 // Global Variables
 var map, clientID, clientSecret;
@@ -156,7 +156,7 @@ var ViewModel = function() {
 
 
 
-}
+};
 
 function startApp() {
     ko.applyBindings(new ViewModel());

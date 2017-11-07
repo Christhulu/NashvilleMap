@@ -14,7 +14,7 @@
           <input class="search" data-bind="textInput: searchOption, valueUpdate: 'afterkeydown'" placeholder="Search Locations...">
           <hr>
           <ul data-bind="foreach: studioFilter">
-              <a href="#"><li  data-bind="text: title, click: $parent.populateAndBounceMarker"></li></a>
+              <li  data-bind="text: title, click: $parent.populateAndBounceMarker"></li>
           </ul>
 
           <h3>Powered by <a href="https://foursquare.com/">FourSquare</a></h3>

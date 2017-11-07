@@ -161,3 +161,7 @@ var ViewModel = function() {
 function startApp() {
     ko.applyBindings(new ViewModel());
 }
+
+function errorHandling() {
+    alert("Google Maps has failed to load. Please check your internet connection and try again.");
+}

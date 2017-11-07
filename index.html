@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find Music Studios in Nashville</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+      <div class="options-box">
+        <h1>Nashville Recording Studios</h1>
+        <div>
+          <input class="search" data-bind="textInput: searchOption, valueUpdate: 'afterkeydown'" placeholder="Search Locations...">
+          <hr>
+          <ul data-bind="foreach: studioFilter">
+              <a href="#"><li  data-bind="text: title, click: $parent.populateAndBounceMarker"></li></a>
+          </ul>
+
+          <h3>Powered by <a href="https://foursquare.com/">FourSquare</a></h3>
+        </div>
+      </div>
+    <div id="map"></div>
+
+
+    <script
+        src="js/lib/knockout-3.2.0.js" charset="utf-8">
+    </script>
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+
+    <script
+        src="js/styles.js" charset="utf-8">
+    </script>
+
+    <script
+        src="js/app.js" charset="utf-8">
+    </script>
+
+    <!--TODO: Insert your API Key in the below call to load the API.-->
+    <script async defer
+     src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBEymTwpbg1eeXVW_AJ83_eqU7QjDqdgdM&callback=startApp">
+    </script>
+
+  </body>
+</html>
